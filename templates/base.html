@@ -1,0 +1,12 @@
+{% extends 'bootstrap/base.html' %}
+{% block head %}
+{{ ckeditor.load() }}
+{{ super() }}
+{% block title %}
+Flog
+{% endblock %}
+{% block content %}
+    {% include "_messages.html" %}
+    {% block sub_content %}
+    {% endblock %}
+{% endblock %}
